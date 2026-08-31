@@ -46,6 +46,12 @@ Christlicher Schmuck kann mehr sein als ein modisches Accessoire. Ein Kreuz, ein
 
 Auf diesem GitHub-Profil dokumentieren wir ausgewählte digitale Projekte, strukturierte Informationen und öffentlich nutzbare Ressourcen rund um Jesusschmuck.com.
 
+## Digitales Projekt
+
+### Kostenloser Ringgrößen-Rechner
+
+Mit dem [Ringgrößen-Rechner](https://github.com/jesusschmuck/ringgroessen-rechner) lassen sich Fingerumfang oder Innendurchmesser unkompliziert in eine EU- und ungefähre US-Ringgröße umrechnen. Das Projekt ist öffentlich, mobil nutzbar und steht unter der MIT-Lizenz.
+
 ## Verbindung aufnehmen
 
 - Website: [www.jesusschmuck.com](https://www.jesusschmuck.com/)
