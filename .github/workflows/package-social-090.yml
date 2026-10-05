@@ -1,0 +1,28 @@
+name: Package Social MCP 0.9.0
+on:
+  push:
+    branches: [social-direct-post-090]
+    paths:
+      - 'scripts/build-social-090.py'
+      - '.github/workflows/package-social-090.yml'
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build and lint
+        run: python3 scripts/build-social-090.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jesusschmuck-social-mcp-0.9.0
+          path: dist/jesusschmuck-social-mcp-0.9.0.zip
+      - name: Commit distributable
+        run: |
+          git config user.name "Jesusschmuck Build"
+          git config user.email "info@jesusschmuck.com"
+          git add -f dist/jesusschmuck-social-mcp-0.9.0.zip
+          git diff --cached --quiet && exit 0
+          git commit -m "Package Jesusschmuck Social MCP 0.9.0"
+          git push
